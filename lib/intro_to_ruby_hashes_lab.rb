@@ -2,7 +2,7 @@ def my_hash_creator(key = :full_name, value = "John Easter")
   { key => value }
 end
 
-def read_from_hash(hash = { mother: "Kathryn", father: "Eric", brother: "Seth", key = :sister)
+def read_from_hash(hash = { mother: "Kathryn", father: "Eric", brother: "Seth"}, key = :sister)
   hash[key]
 end
 
