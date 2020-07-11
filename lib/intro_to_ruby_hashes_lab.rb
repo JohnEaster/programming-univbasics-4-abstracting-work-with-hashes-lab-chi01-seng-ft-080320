@@ -7,5 +7,8 @@ def read_from_hash(hash = { mother: "Kathryn", father: "Eric", brother: "Seth"},
 end
 
 def update_counting_hash(hash = { ants: 3, bees: 7, cats: 5, dogs: 2 }, key = :cats)
-  hash[:cats] += 1
+  if hash[key]
+    hash[key] += 1
+  else hash[key] = 1
+  end
 end
